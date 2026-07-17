@@ -30,6 +30,14 @@ solves from any starting position.
 
 Full writeup: [final.pdf](final.pdf)
 
+## Status
+
+Works correctly for size 5 and below. Size 6 solves but is memory-hungry —
+the search has no pruning beyond basic backtracking. A revision is planned:
+profile where size 6 blows up, add pruning (symmetry reduction, better move
+ordering, or memoization on board state), and write up the actual
+decision-by-decision reasoning instead of the original class header.
+
 ---
 
 *CSC 447 (Artificial Intelligence), Kutztown University, Fall 2021.
